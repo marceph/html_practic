@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Porfolio</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/img/nino.ico">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!--- font awesome -->
+  <script src="https://kit.fontawesome.com/b8e4633dad.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar_pc">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="assets/img/arg_prog_logo.png" width="90rem" alt="Home">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item list-group  list-group-horizontal">
+                      <a class="nav-link active text-white" aria-current="page" href="#about-me">About me</a>
+                      <a class="nav-link active text-white" aria-current="page" href="projects.html">Projects</a>
+                      <a class="nav-link active text-white" aria-current="page" href="dashboard.html">Edit</a>
+                  </li>
+              </ul>
+              <div class="btn-group ms-4 pe-2" role="group">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i
+                          class="fa-solid fa-globe fa-xl"></i></button>
+                  <ul class="dropdown-menu bg-dark">
+                      <li><a class="dropdown-item text-white" href="#">English</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Spanish</a></li>
+                      <li><a class="dropdown-item text-white" href="#">العربية</a></li>
+                  </ul>
+              </div>
+              <form class="d-flex search-form" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                  <button class="btn btn-outline-success btn-outline-light search-form-btn"
+                      type="submit">Search</button>
+              </form>
+              <li class="nav-item list-group list-group-horizontal">
+                  <a href="#" target="_blank" title="Instagram">
+              <li class="list-group-item"><i class="fa-brands fa-instagram fa-xl mx-2"></i></li></a>
+              <a href="#" target="_blank" title="Twitter">
+                  <li class="list-group-item"><i class="fa-brands fa-twitter fa-xl mx-2"></i></li>
+              </a>
+              <a href="#" target="_blank" title="GitHub">
+                  <li class="list-group-item"><i class="fa-brands fa-github fa-xl mx-2"></i></li>
+              </a>
+              <a href="#" target="_blank" title="Email">
+                  <li class="list-group-item"><i class="fa-regular fa-envelope fa-xl mx-2"></i></li>
+              </a>
+              </li>
+              <div class="btn-group ms-4 pe-4" role="group">
+                  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">Username</button>
+                  <ul class="dropdown-menu bg-dark">
+                      <li><a class="dropdown-item text-white" href="index.html">Profile</a></li>
+                      <li><a class="dropdown-item text-white" href="login.html">Login In</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Login out</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <nav class="navbar fixed-top navbar_resp" style="background-color: #000;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="assets/img/arg_prog_logo.png" width="90rem" alt="Home">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">Username</span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Username</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active text-light" aria-current="page" href="login.html">Log In</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="dashboard.html">Edit</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="index.html">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="#about-me">About me</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="projects.html">Projects</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-light" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Contact
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item text-white" href="#">Instagram</a></li>
+                              <li><a class="dropdown-item text-white" href="#">Twitter</a></li>
+                              <li><a class="dropdown-item text-white" href="#">Email</a></li>
+                              <li>
+                                  <hr class="dropdown-divider text-white">
+                              </li>
+                              <li><a class="dropdown-item text-white" href="#">GitHub</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-light" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Language
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">English</a></li>
+                              <li><a class="dropdown-item" href="#">Spanish</a></li>
+                              <li><a class="dropdown-item" href="#">العربية</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="#">Login out</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex search-form mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                      <button class="btn btn-outline-success btn-outline-light search-form-btn"
+                          type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Section -->
+
+  <section>
+    <!-- <button class="edit-ico" type="button" data-bs-toggle="modal" data-bs-target="">
+      <i class="fa-solid fa-pen"></i>
+    </button> -->
+    <div class="container-fluid text-light">
+      <div id="img-fondo">
+        <div class="row">
+          <div class="col col-xl col-lg col-md col-sm">
+            <h4 class="text-center section_home_h4">Welcome to</h4>
+            <h1 class="section_home_h1">My Porfolio</h1>
+            <div class="section-div-btn">
+              <a href="#" target="_blank">download cv</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About me -->
+
+
+  <section class="container-fluid section mt-aboutme">
+    <div class="container-fluid text-white section-div-aboutme">
+      <div class="container-fluid text-center">
+        <h1 class="mb-5" id="about-me">About me</h1>
+        <div class="container border-top border-bottom">
+          <div class="row d-flex align-items-center mb-3">
+            <div class="col-1"></div>
+            <div class="col-xl-7 col-lg-5 col-md col-sm">
+              <h5>
+                Lorem ipsum dolor sit ame
+                consectetur adipisicing elit. Exercitationem obcaecati rep
+                ellendus tempora rem, tenetur vero accus
+                amus inventore tempore et non optio verit
+                atis esse nobis aspernatur eum doloribus sed debitis? Asperiores?
+              </h5>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-xl-3 col-lg-4 col-md-3 col-sm-3">
+              <img src="assets/img/nino.ico" class="rounded-circle w-100" alt="img-banner">
+              <h3>Marcelo Martinez</h3>
+              <h5>Full Stack Developer Jr.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+
+
+  <section>
+    <h1 class="text-center text-light py-5">Skills</h1>
+    <div class="container">
+      <div class="progress mb-4 fs-5 fs-skills">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" 
+        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+        90% HTML completed
+        </div>
+      </div>
+      <div class="progress mb-4 fs-5 fs-skills">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" 
+        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+        80% CSS completed
+        </div>
+      </div>
+      <div class="progress mb-4 fs-5 fs-skills">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" 
+        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+        90% BOOTSTRAP completed
+        </div>
+      </div>
+      <div class="progress mb-4 fs-5 fs-skills">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" 
+        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+        30% JAVASCRIPT completed
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education -->
+
+
+  <section>
+    <h1 class="text-center text-light pt-4 pb-4">Education</h1>
+    <div class="container text-center text-white mb-5">
+      <div class="row">
+        <div class="col d-flex justify-content-center my-5">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/bachiller.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Bachiller</h5>
+              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Título: Economía y Administración</li>
+              <li class="list-group-item">Establecimiento: Instituto Glaciar Perito Moreno</li>
+              <li class="list-group-item">Inicio: 02-03-2015</li>
+              <li class="list-group-item">Fin: 11-12-2020</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center my-5">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/unpaz.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Licenciatura</h5>
+              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Título: Gestión de Tecnologías de la Información</li>
+              <li class="list-group-item">Establecimiento: Universidad Nacional de José C. Paz</li>
+              <li class="list-group-item">Inicio: 05-04-2021</li>
+              <li class="list-group-item">Fin: -</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center my-5">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/arg_prog_logo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Curso</h5>
+              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Título: Full Stack Developer Jr.</li>
+              <li class="list-group-item">Establecimiento: Instituto Nacional de Tecnología Industrial</li>
+              <li class="list-group-item">Inicio: 28-06-2022</li>
+              <li class="list-group-item">Fin: 15-01-2023</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Experience -->
+
+
+  <section>
+    <h1 class="text-center text-light py-5">Experience</h1>
+    <div class="container text-center text-white mb-5">
+      <!-- first experience -->
+      <div class="row mb-3">
+        <div class="col">
+          <div class="border border-light experience">
+            <h2 class="p-3">Payaso</h2>
+            <img src="assets/img/arg_prog_logo.png" alt="foto-exp">
+            <h5 class="py-2">20-04-1994 / 24-03-2000</h5>
+            <h5 class="pb-2">Establecimiento: En la esquina de mi casa</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Quis, nesciunt. Voluptate beatae nostrum dolorem facilis explicabo. 
+              Facere consequuntur, ullam, voluptas assumenda debitis velit iure, 
+              temporibus repellendus porro sunt sed odio.</p>
+          </div>
+        </div>
+      </div>
+      <!-- second experience -->
+      <div class="row mb-3">
+        <div class="col">
+          <div class="border border-light experience">
+            <h2 class="p-3">Payaso</h2>
+            <img src="assets/img/arg_prog_logo.png" alt="foto-exp">
+            <h5 class="py-2">20-04-1994 / 24-03-2000</h5>
+            <h5 class="pb-2">Establecimiento: En la esquina de mi casa</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Quis, nesciunt. Voluptate beatae nostrum dolorem facilis explicabo. 
+              Facere consequuntur, ullam, voluptas assumenda debitis velit iure, 
+              temporibus repellendus porro sunt sed odio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+
+  <footer class="footer text-white">
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="mb-0">Martinez Marcelo, Copyright ©2022. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

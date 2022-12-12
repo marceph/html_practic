@@ -1,0 +1,242 @@
+body {
+    background-image: url(../img/fondopag2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: serif;
+}
+
+/* Responsive */
+
+/* tablet and phone */
+@media only screen and (max-width: 1020px) {
+    .navbar_pc {
+        display: none !important;
+    }
+
+    .navbar_resp {
+        display: block !important;
+    }
+    
+    .section_home_h1 {
+        text-align: center;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 1021px) {
+    .navbar_resp {
+        display: none !important;
+    }
+
+    .navbar_pc {
+        display: block !important;
+    }
+
+    .section_home_h1 {
+        text-align: center;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/* Navbar */
+.navbar {
+    background: #000;
+}
+
+.color-sticky-navbar {
+    background: #000;
+    height: 20%;
+}
+
+.dropdown-item:hover {
+    background-color: #000;
+}
+
+.search-form-btn:hover {
+    color: #000;
+}
+
+span.navbar-toggler-icon {
+    --bs-navbar-color: #fff;
+}
+
+span.navbar-toggler-icon {
+    background-color: #FFF;
+}
+
+.search-form {
+    margin-right: 30px;
+}
+
+i {
+    color: #fff;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #223047;
+}
+
+
+/* redes */
+
+.fa-brands.fa-instagram:hover {
+    color: #8b0000;
+}
+
+.fa-brands.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-brands.fa-github:hover {
+    color: #054a66;
+}
+
+.fa-regular.fa-envelope:hover {
+    color: #8b0000;
+}
+
+li.nav-item.list-group.list-group-horizontal {
+    --bs-list-group-color: none;
+    --bs-list-group-bg: none;
+    --bs-list-group-item-padding-y: none;
+}
+
+
+/* Dashboard */
+.m-top {
+    margin-top: 300px;
+}
+
+.tamaño-boton-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-1 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-1:hover {
+    margin: 1px;
+}
+
+.tamaño-boton-2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-2 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-2:hover {
+    margin: 1px;
+}
+
+.tamaño-boton-3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-3 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-3:hover {
+    margin: 1px;
+}
+
+.tamaño-boton-4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-4 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-4:hover {
+    margin: 1px;
+}
+
+.tamaño-boton-5 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-5 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-5:hover {
+    margin: 1px;
+}
+
+.tamaño-boton-6 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-6 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-6:hover {
+    margin: 1px;
+}
+
+.tamaño-boton-7 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-7 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-7:hover {
+    margin: 1px;
+}
+
+.tamaño-boton-8 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: ridge 10px;
+    box-shadow: 0 10px 10px 0 #000;
+}
+
+.tamaño-boton-8 i {
+    font-size: 50px;
+}
+
+.tamaño-boton-8:hover {
+    margin: 1px;
+}

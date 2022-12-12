@@ -1,0 +1,171 @@
+/* Responsive */
+
+/* tablet and phone */
+@media only screen and (max-width: 1020px) {
+    .navbar_pc {
+        display: none !important;
+    }
+
+    .navbar_resp {
+        display: block !important;
+    }
+    
+    .section_home_h1 {
+        text-align: center;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 1021px) {
+    .navbar_resp {
+        display: none !important;
+    }
+
+    .navbar_pc {
+        display: block !important;
+    }
+
+    .section_home_h1 {
+        text-align: center;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/* navbar */
+
+
+/* Navbar */
+.navbar {
+    background: #000;
+}
+
+.color-sticky-navbar {
+    background: #000;
+    height: 20%;
+}
+
+.dropdown-item:hover {
+    background-color: #000;
+}
+
+.search-form-btn:hover {
+    color: #000;
+}
+
+span.navbar-toggler-icon {
+    --bs-navbar-color: #fff;
+}
+
+span.navbar-toggler-icon {
+    background-color: #FFF;
+}
+
+.search-form {
+    margin-right: 30px;
+}
+
+i {
+    color: #fff;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #223047;
+}
+
+
+/* redes */
+
+.fa-brands.fa-instagram:hover {
+    color: #8b0000;
+}
+
+.fa-brands.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-brands.fa-github:hover {
+    color: #054a66;
+}
+
+.fa-regular.fa-envelope:hover {
+    color: #8b0000;
+}
+
+li.nav-item.list-group.list-group-horizontal {
+    --bs-list-group-color: none;
+    --bs-list-group-bg: none;
+    --bs-list-group-item-padding-y: none;
+}
+
+
+/* login */
+
+body {
+    font-family: serif;
+    background-image: url(../img/skynight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.formulario {
+    background: #000000bb;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    box-shadow: 0 0 30px #000;
+    color: #fff;
+}
+
+.form-control {
+    color: #000 !important;
+}
+
+.ingresar {
+    background: #223047 !important;
+    padding: .625rem;
+    font-size: 16px;
+    font-weight: 700 !important;
+    color: #fff !important;
+    box-shadow: 0 0 1.875rem #000;
+    transition: 0.1s;
+}
+
+.ingresar:hover {
+    color: #fff;
+}
+
+.olvide {
+    color: #fff;
+    text-decoration: none;
+}
+
+.olvide:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.register {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 700!important;
+    padding: 0.375rem;
+    border-radius: 0.313rem;
+    background: #223047;
+}
+
+.register:hover {
+    color: #fff;
+    text-decoration: none;
+}

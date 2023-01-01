@@ -113,7 +113,7 @@ li.nav-item.list-group.list-group-horizontal {
     margin-top: 300px;
 }
 
-.tamaño-boton-1 {
+.tamaño-boton {
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -121,122 +121,10 @@ li.nav-item.list-group.list-group-horizontal {
     box-shadow: 0 10px 10px 0 #000;
 }
 
-.tamaño-boton-1 i {
+.tamaño-boton i {
     font-size: 50px;
 }
 
-.tamaño-boton-1:hover {
-    margin: 1px;
-}
-
-.tamaño-boton-2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: ridge 10px;
-    box-shadow: 0 10px 10px 0 #000;
-}
-
-.tamaño-boton-2 i {
-    font-size: 50px;
-}
-
-.tamaño-boton-2:hover {
-    margin: 1px;
-}
-
-.tamaño-boton-3 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: ridge 10px;
-    box-shadow: 0 10px 10px 0 #000;
-}
-
-.tamaño-boton-3 i {
-    font-size: 50px;
-}
-
-.tamaño-boton-3:hover {
-    margin: 1px;
-}
-
-.tamaño-boton-4 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: ridge 10px;
-    box-shadow: 0 10px 10px 0 #000;
-}
-
-.tamaño-boton-4 i {
-    font-size: 50px;
-}
-
-.tamaño-boton-4:hover {
-    margin: 1px;
-}
-
-.tamaño-boton-5 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: ridge 10px;
-    box-shadow: 0 10px 10px 0 #000;
-}
-
-.tamaño-boton-5 i {
-    font-size: 50px;
-}
-
-.tamaño-boton-5:hover {
-    margin: 1px;
-}
-
-.tamaño-boton-6 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: ridge 10px;
-    box-shadow: 0 10px 10px 0 #000;
-}
-
-.tamaño-boton-6 i {
-    font-size: 50px;
-}
-
-.tamaño-boton-6:hover {
-    margin: 1px;
-}
-
-.tamaño-boton-7 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: ridge 10px;
-    box-shadow: 0 10px 10px 0 #000;
-}
-
-.tamaño-boton-7 i {
-    font-size: 50px;
-}
-
-.tamaño-boton-7:hover {
-    margin: 1px;
-}
-
-.tamaño-boton-8 {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: ridge 10px;
-    box-shadow: 0 10px 10px 0 #000;
-}
-
-.tamaño-boton-8 i {
-    font-size: 50px;
-}
-
-.tamaño-boton-8:hover {
+.tamaño-boton:hover {
     margin: 1px;
 }

@@ -30,7 +30,6 @@
                     <li class="nav-item list-group  list-group-horizontal">
                         <a class="nav-link active text-white" aria-current="page" href="#about-me">About me</a>
                         <a class="nav-link active text-white" aria-current="page" href="projects.html">Projects</a>
-                        <a class="nav-link active text-white" aria-current="page" href="dashboard.html">Edit</a>
                     </li>
                 </ul>
                 <div class="btn-group ms-4 pe-2" role="group">
@@ -96,7 +95,7 @@
                             <a class="nav-link active text-light" aria-current="page" href="login.html">Log In</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-light" href="dashboard.html">Edit</a>
+                          <a class="nav-link text-light" href="dashboard.html">Edit social</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="index.html">Profile</a>
@@ -149,278 +148,16 @@
 
     <!-- Dashboard -->
 
-    <div class="container m-top">
-      <div class="row text-center">
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-1 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-home"><i class="fa-solid fa-image" style="color: #222;"></i>Banner</button>
-        </div>
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-2 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-profile"><i class="fa-solid fa-user" style="color: #222;"></i>Profile</button>
-        </div>
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-3 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-about"><i class="fa-solid fa-user-pen" style="color: #222;"></i>About me</button>
-        </div>
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-4 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-skills"><i class="fa-sharp fa-solid fa-glasses" style="color: #222;"></i>Skills</button>
-        </div>
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-5 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-education"><i class="fa-solid fa-user-graduate" style="color: #222;"></i>Edutation</button>
-        </div>
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-6 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-experience"><i class="fa-solid fa-person-digging" style="color: #222;"></i>Experience</button>
-        </div>
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-7 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-social"><i class="fa-solid fa-users" style="color: #222;"></i>Social</button>
-        </div>
-        <div class="col col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4">
-          <button class="tamaño-boton-8 mb-4" data-bs-toggle="modal" data-bs-target="#modal-edit-projects"><i class="fa-solid fa-hammer" style="color: #222;"></i>Projects</button>
-        </div>
-      </div>
+    <div class="container m-top d-flex justify-content-center">
+      <button class="tamaño-boton mb-4" data-bs-toggle="modal" data-bs-target="#modal-add-social"><i class="fa-solid fa-users" style="color: #222;"></i>Social</button>
     </div>
 
 
     <!-- Modals -->
 
-    <!-- Banner -->
-
-    <div class="modal fade" id="modal-edit-home" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Banner</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="mb-3">
-                <label for="" class="form-label">Subir foto</label>
-                <input type="file" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- Profile -->
-
-    <div class="modal fade" id="modal-edit-profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Perfil</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="mb-3">
-                <label for="" class="form-label">Foto de perfil</label>
-                <input type="file" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Nombre(s)</label>
-                <input type="text" placeholder="Ingrese su Nombre..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Apellido(s)</label>
-                <input type="text" placeholder="Ingrese su Apellido..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Profesión</label>
-                <input type="text" placeholder="Ingrese su Profesión..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- About me -->
-
-    <div class="modal fade" id="modal-edit-about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Acerca de mi</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="mb-3">
-                <h6>Descripción</h6>
-                <textarea name="" id="" placeholder="Descripción breve..." cols="50" rows="3"></textarea>
-              </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- Skills -->
-
-    <div class="modal fade" id="modal-edit-skills" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Habilidades</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="mb-3">
-                <label>Seleccionar</label>
-                <select name="select">
-                 <option value="skill1">Skill1</option>
-                 <option value="skill2">Skill2</option>
-                 <option value="skill3">Skill3</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Nombre de la Skill</label>
-                <input type="text" placeholder="Nombre de la Skill..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Porcentaje</label>
-                <input type="number" placeholder="30%, 60%, 100%..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Ícono de fontawesome</label>
-                <input type="text" placeholder="Ej: fa-brands fa-js" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary">Eliminar</button>
-                <button type="button" class="btn btn-primary">Editar</button>
-                <button type="button" class="btn btn-dark">Agregar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- Education -->
-
-    <div class="modal fade" id="modal-edit-education" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Estudios</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="mb-3">
-                <label>Seleccionar</label>
-                <select name="select">
-                 <option value="skill1">Educación1</option>
-                 <option value="skill2">Educación2</option>
-                 <option value="skill3">Educación3</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Logo de estudio</label>
-                <input type="file" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Establecimiento</label>
-                <input type="text" placeholder="Nombre del establecimiento..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Título</label>
-                <input type="text" placeholder="Ingrese título..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Inicio</label>
-                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Fin</label>
-                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <h6>Descripción</h6>
-                <textarea name="" id="" placeholder="Descripción del estudio..." cols="50" rows="2"></textarea>
-              </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary">Eliminar</button>
-              <button type="button" class="btn btn-primary">Editar</button>
-              <button type="button" class="btn btn-dark">Agregar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- Experience -->
-
-    <div class="modal fade" id="modal-edit-experience" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Experiencia</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="mb-3">
-                <label>Seleccionar</label>
-                <select name="select">
-                 <option value="skill1">Experiencia1</option>
-                 <option value="skill2">Experiencia2</option>
-                 <option value="skill3">Experiencia3</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Logo de experiencia</label>
-                <input type="file" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Establecimiento</label>
-                <input type="text" placeholder="Nombre del establecimiento..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Título</label>
-                <input type="text" placeholder="Título del trabajo..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Inicio</label>
-                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Fin</label>
-                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <h6>Descripción</h6>
-                <textarea name="" id="" placeholder="Descripción del trabajo..." cols="50" rows="2"></textarea>
-              </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary">Eliminar</button>
-                <button type="button" class="btn btn-primary">Editar</button>
-                <button type="button" class="btn btn-dark">Agregar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
     <!-- Social -->
 
-    <div class="modal fade" id="modal-edit-social" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-add-social" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -429,14 +166,6 @@
             </div>
             <div class="modal-body">
               <form>
-              <div class="mb-3">
-                <label>Seleccionar</label>
-                <select name="select">
-                 <option value="skill1">Red1</option>
-                 <option value="skill2">Red2</option>
-                 <option value="skill3">Red3</option>
-                </select>
-              </div>
               <div class="mb-3">
                 <label for="" class="form-label">Nombre</label>
                 <input type="text" placeholder="Instagram, Facebook, etc..." class="form-control" id="" aria-describedby="emailHelp">
@@ -452,62 +181,7 @@
             </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary">Eliminar</button>
-                <button type="button" class="btn btn-primary">Editar</button>
-                <button type="button" class="btn btn-dark">Agregar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- Projects -->
-
-    <div class="modal fade" id="modal-edit-projects" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Proyectos</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="mb-3">
-                <label>Seleccionar</label>
-                <select name="select">
-                 <option value="skill1">Proyecto1</option>
-                 <option value="skill2">Proyecto2</option>
-                 <option value="skill3">Proyecto3</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Imagen de proyecto</label>
-                <input type="file" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Título</label>
-                <input type="text" placeholder="Título del proyecto..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Inicio</label>
-                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Fin</label>
-                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Link</label>
-                <input type="text" placeholder="Link del proyecto..." class="form-control" id="" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <h6>Descripción</h6>
-                <textarea name="" id="" placeholder="Descripción del trabajo..." cols="50" rows="2"></textarea>
-              </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary">Eliminar</button>
-                <button type="button" class="btn btn-primary">Editar</button>
+                <button type="button" class="btn btn-secondary">Limpiar</button>
                 <button type="button" class="btn btn-dark">Agregar</button>
             </div>
           </div>

@@ -104,6 +104,10 @@ li.nav-item.list-group.list-group-horizontal {
 /* PROJECTS */
 
 
-.container {
-    margin-top: 250px;
+.m-project {
+    margin-top: 200px;
+}
+
+a {
+    color: #8b0000;
 }

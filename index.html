@@ -33,7 +33,6 @@
                   <li class="nav-item list-group  list-group-horizontal">
                       <a class="nav-link active text-white" aria-current="page" href="#about-me">About me</a>
                       <a class="nav-link active text-white" aria-current="page" href="projects.html">Projects</a>
-                      <a class="nav-link active text-white" aria-current="page" href="dashboard.html">Edit</a>
                   </li>
               </ul>
               <div class="btn-group ms-4 pe-2" role="group">
@@ -63,6 +62,7 @@
                   <li class="list-group-item"><i class="fa-regular fa-envelope fa-xl mx-2"></i></li>
               </a>
               </li>
+              <button type="submit" class="btn ms-2" data-bs-toggle="modal" data-bs-target="#modal-add-social"><i class="fa-solid fa-plus"></i></button>
               <div class="btn-group ms-4 pe-4" role="group">
                   <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
                       aria-expanded="false">Username</button>
@@ -99,7 +99,7 @@
                           <a class="nav-link active text-light" aria-current="page" href="login.html">Log In</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-light" href="dashboard.html">Edit</a>
+                        <a class="nav-link text-light" href="dashboard.html">Edit social</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link text-light" href="index.html">Profile</a>
@@ -150,12 +150,10 @@
       </div>
   </nav>
 
-  <!-- Section -->
+  <!-- Banner -->
 
   <section>
-    <!-- <button class="edit-ico" type="button" data-bs-toggle="modal" data-bs-target="">
-      <i class="fa-solid fa-pen"></i>
-    </button> -->
+    <button type="submit" class="btn edit-ico" data-bs-toggle="modal" data-bs-target="#modal-edit-banner"><i class="fa-solid fa-pencil"></i></button>
     <div class="container-fluid text-light">
       <div id="img-fondo">
         <div class="row">
@@ -178,7 +176,9 @@
   <section class="container-fluid section mt-aboutme">
     <div class="container-fluid text-white section-div-aboutme">
       <div class="container-fluid text-center">
-        <h1 class="mb-5" id="about-me">About me</h1>
+        <h1 class="mb-5 d-inline" id="about-me">About me</h1>
+        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-edit-profile" style="padding-bottom: 14px;"><i class="fa-solid fa-pencil"></i>
+        </button>
         <div class="container border-top border-bottom">
           <div class="row d-flex align-items-center mb-3">
             <div class="col-1"></div>
@@ -206,31 +206,61 @@
   <!-- skills -->
 
 
-  <section>
-    <h1 class="text-center text-light py-5">Skills</h1>
-    <div class="container">
-      <div class="progress mb-4 fs-5 fs-skills">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" 
-        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-        90% HTML completed
+  <section class="text-white">
+    <div class="seccion container-xxl">
+      <div class="row mb-2">
+        <h1 class="text-center py-5">Skills</h1>
+        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-add-skill"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+          <h4>java</h4>
+        </div>
+        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-7 col-6 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated seccion" role="progressbar"
+              aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="min-width:30%">30%
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2 p-0 d-flex">
+          <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-edit-skill"><i class="fa-solid fa-pencil"></i></button>
+          <button type="submit" class="btn"><i class="fa-solid fa-trash-can"></i></button>
         </div>
       </div>
-      <div class="progress mb-4 fs-5 fs-skills">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" 
-        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-        80% CSS completed
+      <div class="row">
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+          <h4>java</h4>
+        </div>
+        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-7 col-6 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated seccion" role="progressbar"
+              aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="min-width:30%">30%
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2 p-0 d-flex">
+          <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-edit-skill"><i class="fa-solid fa-pencil"></i></button>
+          <button type="submit" class="btn"><i class="fa-solid fa-trash-can"></i></button>
         </div>
       </div>
-      <div class="progress mb-4 fs-5 fs-skills">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" 
-        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-        90% BOOTSTRAP completed
+      <div class="row">
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+          <h4>java</h4>
         </div>
-      </div>
-      <div class="progress mb-4 fs-5 fs-skills">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" 
-        aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-        30% JAVASCRIPT completed
+        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-7 col-6 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated seccion" role="progressbar"
+              aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              style="min-width:30%">30%
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2 p-0 d-flex">
+          <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-edit-skill"><i class="fa-solid fa-pencil"></i></button>
+          <button type="submit" class="btn"><i class="fa-solid fa-trash-can"></i></button>
         </div>
       </div>
     </div>
@@ -240,53 +270,31 @@
   <!-- Education -->
 
 
-  <section>
-    <h1 class="text-center text-light pt-4 pb-4">Education</h1>
-    <div class="container text-center text-white mb-5">
-      <div class="row">
-        <div class="col d-flex justify-content-center my-5">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/img/bachiller.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Bachiller</h5>
-              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Título: Economía y Administración</li>
-              <li class="list-group-item">Establecimiento: Instituto Glaciar Perito Moreno</li>
-              <li class="list-group-item">Inicio: 02-03-2015</li>
-              <li class="list-group-item">Fin: 11-12-2020</li>
-            </ul>
-          </div>
+  <section class="text-white">
+    <div class="seccion container-xxl">
+      <div class="row mb-2">
+        <h1 class="text-center py-5">Education</h1>
+        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-add-education"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div class="row mt-2">
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+          <a target="_blank"><img src="assets/img/arg_prog_logo.png" class="w-50"></a>
+          <h5>Yo Programo</h5>
+          <h6>28-06-2022 | 15-01-2023</h6>
         </div>
-        <div class="col d-flex justify-content-center my-5">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/img/unpaz.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Licenciatura</h5>
-              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Título: Gestión de Tecnologías de la Información</li>
-              <li class="list-group-item">Establecimiento: Universidad Nacional de José C. Paz</li>
-              <li class="list-group-item">Inicio: 05-04-2021</li>
-              <li class="list-group-item">Fin: -</li>
-            </ul>
-          </div>
+        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-7 col-6 mt-2">
+          <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Quis, nesciunt. Voluptate beatae nostrum dolorem facilis explicabo.
+            Facere consequuntur, ullam, voluptas assumenda debitis velit iure,
+            temporibus repellendus porro sunt sed odio.
+          </h5>
         </div>
-        <div class="col d-flex justify-content-center my-5">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/img/arg_prog_logo.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Curso</h5>
-              <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Título: Full Stack Developer Jr.</li>
-              <li class="list-group-item">Establecimiento: Instituto Nacional de Tecnología Industrial</li>
-              <li class="list-group-item">Inicio: 28-06-2022</li>
-              <li class="list-group-item">Fin: 15-01-2023</li>
-            </ul>
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2 p-0 d-flex">
+          <div class="p-0">
+            <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-edit-education"><i class="fa-solid fa-pencil"></i></button>
+          </div>
+          <div class="p-0">
+            <button type="submit" class="btn"><i class="fa-solid fa-trash-can"></i></button>
           </div>
         </div>
       </div>
@@ -297,36 +305,31 @@
   <!-- Experience -->
 
 
-  <section>
-    <h1 class="text-center text-light py-5">Experience</h1>
-    <div class="container text-center text-white mb-5">
-      <!-- first experience -->
-      <div class="row mb-3">
-        <div class="col">
-          <div class="border border-light experience">
-            <h2 class="p-3">Payaso</h2>
-            <img src="assets/img/arg_prog_logo.png" alt="foto-exp">
-            <h5 class="py-2">20-04-1994 / 24-03-2000</h5>
-            <h5 class="pb-2">Establecimiento: En la esquina de mi casa</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Quis, nesciunt. Voluptate beatae nostrum dolorem facilis explicabo. 
-              Facere consequuntur, ullam, voluptas assumenda debitis velit iure, 
-              temporibus repellendus porro sunt sed odio.</p>
-          </div>
-        </div>
+  <section class="text-white">
+    <div class="seccion container-xxl">
+      <div class="row mb-2">
+        <h1 class="text-center py-5">Experience</h1>
+        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-add-experience"><i class="fa-solid fa-plus"></i></button>
       </div>
-      <!-- second experience -->
-      <div class="row mb-3">
-        <div class="col">
-          <div class="border border-light experience">
-            <h2 class="p-3">Payaso</h2>
-            <img src="assets/img/arg_prog_logo.png" alt="foto-exp">
-            <h5 class="py-2">20-04-1994 / 24-03-2000</h5>
-            <h5 class="pb-2">Establecimiento: En la esquina de mi casa</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Quis, nesciunt. Voluptate beatae nostrum dolorem facilis explicabo. 
-              Facere consequuntur, ullam, voluptas assumenda debitis velit iure, 
-              temporibus repellendus porro sunt sed odio.</p>
+      <div class="row mt-2">
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+          <a target="_blank"><img src="assets/img/arg_prog_logo.png" class="w-50"></a>
+          <h5>Yo Programo</h5>
+          <h6>28-06-2022 | 15-01-2023</h6>
+        </div>
+        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8 col-sm-7 col-6 mt-2">
+          <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Quis, nesciunt. Voluptate beatae nostrum dolorem facilis explicabo.
+            Facere consequuntur, ullam, voluptas assumenda debitis velit iure,
+            temporibus repellendus porro sunt sed odio.
+          </h5>
+        </div>
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2 p-0 d-flex">
+          <div class="p-0">
+            <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#modal-edit-experience"><i class="fa-solid fa-pencil"></i></button>
+          </div>
+          <div class="p-0">
+            <button type="submit" class="btn"><i class="fa-solid fa-trash-can"></i></button>
           </div>
         </div>
       </div>
@@ -347,6 +350,424 @@
       </div>
     </div>
   </footer>
+
+  <!-- MODALS -->
+
+<!-- Social -->
+
+<div class="modal fade" id="modal-add-social" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Redes Sociales</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="mb-3">
+          <label for="" class="form-label">Nombre</label>
+          <input type="text" placeholder="Instagram, Facebook, etc..." class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Link</label>
+          <input type="text" placeholder="Link de la Red Social..." class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Ícono de fontawesome</label>
+          <input type="text" placeholder="Ej: fa-brands fa-instagram" class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Limpiar</button>
+          <button type="button" class="btn btn-dark">Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Banner -->
+
+<div class="modal fade" id="modal-edit-banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Banner</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="mb-3">
+          <label for="" class="form-label">Banner</label>
+          <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">CV</label>
+          <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Limpiar</button>
+        <button type="button" class="btn btn-dark">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Profile -->
+
+<div class="modal fade" id="modal-edit-profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Perfil</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="mb-3">
+          <label for="" class="form-label">Nombre(s)</label>
+          <input type="text" placeholder="Ingrese su Nombre..." class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Apellido(s)</label>
+          <input type="text" placeholder="Ingrese su Apellido..." class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Profesión</label>
+          <input type="text" placeholder="Ingrese su Profesión..." class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Foto de perfil</label>
+          <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <h6>Descripción</h6>
+          <textarea name="" id="" placeholder="Descripción breve..." cols="50" rows="3"></textarea>
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Limpiar</button>
+        <button type="button" class="btn btn-dark">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Skill add -->
+  
+  <div class="modal fade" id="modal-add-skill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar habilidad</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre de la Skill</label>
+              <input type="text" placeholder="Nombre de la Skill..." class="form-control" id=""
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Porcentaje</label>
+              <input type="number" placeholder="30%, 60%, 100%..." class="form-control" id=""
+                aria-describedby="emailHelp">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Limpiar</button>
+          <button type="button" class="btn btn-dark">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Skill edit -->
+  
+  <div class="modal fade" id="modal-edit-skill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar habilidad</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre de la Skill</label>
+              <input type="text" placeholder="Nombre de la Skill..." class="form-control" id=""
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Porcentaje</label>
+              <input type="number" placeholder="30%, 60%, 100%..." class="form-control" id=""
+                aria-describedby="emailHelp">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Limpiar</button>
+          <button type="button" class="btn btn-dark">Editar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Education add -->
+
+    <div class="modal fade" id="modal-add-education" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar estudio</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+              <div class="mb-3">
+                <label for="" class="form-label">Logo de estudio</label>
+                <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Título</label>
+                <input type="text" placeholder="Ingrese título..." class="form-control" id="" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Inicio</label>
+                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Fin</label>
+                <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <h6>Descripción</h6>
+                <textarea name="" id="" placeholder="Descripción del estudio..." cols="50" rows="2"></textarea>
+              </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary">Limpiar</button>
+              <button type="button" class="btn btn-dark">Agregar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Education edit -->
+
+    <div class="modal fade" id="modal-edit-education" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Editar estudio</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+            <div class="mb-3">
+              <label for="" class="form-label">Logo de estudio</label>
+              <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Título</label>
+              <input type="text" placeholder="Ingrese título..." class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Inicio</label>
+              <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Fin</label>
+              <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <h6>Descripción</h6>
+              <textarea name="" id="" placeholder="Descripción del estudio..." cols="50" rows="2"></textarea>
+            </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Limpiar</button>
+            <button type="button" class="btn btn-dark">Editar</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<!-- Education add -->
+
+<div class="modal fade" id="modal-add-education" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar estudio</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="" class="form-label">Logo de estudio</label>
+            <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Título</label>
+            <input type="text" placeholder="Ingrese título..." class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Inicio</label>
+            <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Fin</label>
+            <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <h6>Descripción</h6>
+            <textarea name="" id="" placeholder="Descripción del estudio..." cols="50" rows="2"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Limpiar</button>
+        <button type="button" class="btn btn-dark">Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Education edit -->
+
+<div class="modal fade" id="modal-edit-education" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar estudio</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="" class="form-label">Logo de estudio</label>
+            <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Título</label>
+            <input type="text" placeholder="Ingrese título..." class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Inicio</label>
+            <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Fin</label>
+            <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <h6>Descripción</h6>
+            <textarea name="" id="" placeholder="Descripción del estudio..." cols="50" rows="2"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Limpiar</button>
+        <button type="button" class="btn btn-dark">Editar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Experience add -->
+  
+  <div class="modal fade" id="modal-add-experience" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar experiencia</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="" class="form-label">Logo de experiencia</label>
+              <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Título</label>
+              <input type="text" placeholder="Título del trabajo..." class="form-control" id=""
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Inicio</label>
+              <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Fin</label>
+              <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <h6>Descripción</h6>
+              <textarea name="" id="" placeholder="Descripción del trabajo..." cols="50" rows="2"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Limpiar</button>
+          <button type="button" class="btn btn-dark">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Experience edit -->
+  
+  <div class="modal fade" id="modal-edit-experience" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar experiencia</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="" class="form-label">Logo de experiencia</label>
+              <input type="file" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Título</label>
+              <input type="text" placeholder="Título del trabajo..." class="form-control" id=""
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Inicio</label>
+              <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Fin</label>
+              <input type="date" class="form-control" id="" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <h6>Descripción</h6>
+              <textarea name="" id="" placeholder="Descripción del trabajo..." cols="50" rows="2"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Limpiar</button>
+          <button type="button" class="btn btn-dark">Editar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

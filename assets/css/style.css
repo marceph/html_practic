@@ -110,12 +110,19 @@ li.nav-item.list-group.list-group-horizontal {
 }
 
 
-/* Section */
+/* Banner */
 
 
 section {
     width: 100%;
     margin-top: 90px;
+}
+
+.edit-ico {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    color: #fff;
 }
 
 #img-fondo {
@@ -171,6 +178,12 @@ section {
 
 .section_home_h1 {
     font-size: 6rem;
+}
+
+/* about me */
+
+.mt-aboutme {
+    margin-top: 50px;
 }
 
 
